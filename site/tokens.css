@@ -1,0 +1,25 @@
+/* Iridium design tokens. Shared across Iridium web projects; copy this file verbatim. */
+:root {
+  --ir-bg: #0b0a12;
+  --ir-surface: #12111c;
+  --ir-surface-2: #191726;
+  --ir-border: #272438;
+  --ir-border-strong: #3a3554;
+  --ir-text: #eceaf6;
+  --ir-text-muted: #a7a3bd;
+  --ir-text-subtle: #6f6a88;
+  --ir-accent: #8b5cf6;
+  --ir-accent-strong: #6d28d9;
+  --ir-accent-soft: #d9d4fa;
+  --ir-steel: #a9abd0;
+  --ir-ok: #3fb68b;
+  --ir-warn: #e0b341;
+  --ir-err: #e5484d;
+  --ir-info: #6ca8ff;
+  --ir-focus: #b79cff;
+  --ir-radius: 8px;
+  --ir-radius-sm: 6px;
+  --ir-font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ir-font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --ir-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}

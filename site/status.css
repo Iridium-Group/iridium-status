@@ -1,0 +1,290 @@
+/* Status page styles. Requires tokens.css and base.css from the Iridium UI kit. */
+
+.st-header {
+  border-bottom: 1px solid var(--ir-border);
+  background: color-mix(in srgb, var(--ir-bg) 85%, transparent);
+}
+
+.st-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  min-height: 4rem;
+}
+
+.st-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--ir-font-display);
+  font-weight: 600;
+  color: var(--ir-text);
+  text-decoration: none;
+}
+
+.st-nav {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.st-nav a {
+  color: var(--ir-text-muted);
+  text-decoration: none;
+}
+
+.st-nav a:hover {
+  color: var(--ir-text);
+}
+
+main {
+  padding-block: 3.5rem 2rem;
+}
+
+main > h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-top: 0.5rem;
+}
+
+.st-overall {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-block: 2rem 3rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--ir-surface);
+  border: 1px solid var(--ir-border);
+  border-left: 4px solid var(--st-color, var(--ir-text-subtle));
+  border-radius: var(--ir-radius);
+}
+
+.st-overall h2 {
+  font-size: 1.375rem;
+}
+
+.st-overall p {
+  margin-top: 0.35rem;
+  color: var(--ir-text-muted);
+  font-size: 0.9375rem;
+}
+
+.st-overall--operational {
+  --st-color: var(--ir-ok);
+}
+.st-overall--degraded,
+.st-overall--partial {
+  --st-color: var(--ir-warn);
+}
+.st-overall--major {
+  --st-color: var(--ir-err);
+}
+.st-overall--unknown {
+  --st-color: var(--ir-text-subtle);
+}
+
+.st-dot {
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--st-color, currentColor);
+}
+
+.st-dot--lg {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-top: 0.45rem;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--st-color) 25%, transparent);
+}
+
+.st-section-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.st-services {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.st-service {
+  padding: 1.25rem 1.5rem;
+  background: var(--ir-surface);
+  border: 1px solid var(--ir-border);
+  border-radius: var(--ir-radius);
+}
+
+.st-service__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.st-service h3 {
+  font-size: 1.125rem;
+}
+
+.st-service h3 a {
+  color: var(--ir-text);
+  text-decoration: none;
+}
+
+.st-service h3 a:hover {
+  text-decoration: underline;
+}
+
+.st-service__desc {
+  margin-top: 0.35rem;
+  color: var(--ir-text-muted);
+  font-size: 0.9375rem;
+}
+
+.st-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--ir-border-strong);
+  border-radius: 999px;
+  font-family: var(--ir-font-mono);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--ir-text);
+  white-space: nowrap;
+}
+
+.st-state--up {
+  --st-color: var(--ir-ok);
+}
+.st-state--degraded {
+  --st-color: var(--ir-warn);
+}
+.st-state--down {
+  --st-color: var(--ir-err);
+}
+.st-state--unknown {
+  --st-color: var(--ir-text-subtle);
+}
+
+.st-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin: 0.85rem 0 0;
+  font-size: 0.8125rem;
+}
+
+.st-facts div {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.st-facts dt {
+  color: var(--ir-text-subtle);
+}
+
+.st-facts dd {
+  margin: 0;
+  font-family: var(--ir-font-mono);
+  color: var(--ir-text-muted);
+}
+
+.st-error {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--ir-radius-sm);
+  background: color-mix(in srgb, var(--ir-err) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ir-err) 40%, transparent);
+  font-family: var(--ir-font-mono);
+  font-size: 0.8125rem;
+  overflow-wrap: anywhere;
+}
+
+.st-bar {
+  display: flex;
+  gap: 2px;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.st-bar .st-day {
+  flex: 1 1 0;
+  min-width: 2px;
+  height: 100%;
+}
+
+.st-day {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2px;
+  background: var(--ir-border-strong);
+}
+
+.st-day--up {
+  background: var(--ir-ok);
+}
+.st-day--degraded {
+  background: var(--ir-warn);
+}
+.st-day--partial {
+  background: color-mix(in srgb, var(--ir-err) 55%, var(--ir-warn));
+}
+.st-day--down {
+  background: var(--ir-err);
+}
+.st-day--none {
+  background: var(--ir-border-strong);
+}
+
+.st-bar-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  font-family: var(--ir-font-mono);
+  font-size: 0.6875rem;
+  color: var(--ir-text-subtle);
+}
+
+.st-legend {
+  margin-top: 3rem;
+  font-size: 0.875rem;
+  color: var(--ir-text-muted);
+}
+
+.st-legend p {
+  margin-top: 0.5rem;
+}
+
+.st-legend ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.st-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.st-footer {
+  border-top: 1px solid var(--ir-border);
+  margin-top: 4rem;
+  padding-block: 2rem;
+  font-size: 0.875rem;
+  color: var(--ir-text-muted);
+}
