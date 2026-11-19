@@ -1,0 +1,33 @@
+{
+  "name": "iridium-status",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A static status page for Iridium services, updated by scheduled GitHub Actions checks.",
+  "license": "MIT",
+  "type": "module",
+  "author": "Iridium Group contributors",
+  "homepage": "https://iridium-group.github.io/iridium-status/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iridium-Group/iridium-status.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Iridium-Group/iridium-status/issues"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "check": "node src/cli/check.ts",
+    "build": "node src/cli/build.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test 'test/**/*.test.ts'",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "prettier": "^3.10.1",
+    "typescript": "~5.9.3"
+  }
+}
