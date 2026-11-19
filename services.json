@@ -1,0 +1,32 @@
+{
+  "title": "Iridium Status",
+  "historyLimit": 2880,
+  "days": 30,
+  "defaults": {
+    "method": "GET",
+    "expectStatus": 200,
+    "timeoutMs": 10000,
+    "degradedAfterMs": 3000,
+    "retries": 1
+  },
+  "services": [
+    {
+      "id": "website",
+      "name": "Website",
+      "description": "The Iridium Group website on GitHub Pages.",
+      "url": "https://iridium-group.github.io/iridium/"
+    },
+    {
+      "id": "docs",
+      "name": "Documentation",
+      "description": "The Iridium documentation site on GitHub Pages.",
+      "url": "https://iridium-group.github.io/iridium-docs/"
+    },
+    {
+      "id": "github",
+      "name": "GitHub organization",
+      "description": "Source code, issues, and releases at github.com/Iridium-Group.",
+      "url": "https://github.com/Iridium-Group"
+    }
+  ]
+}
