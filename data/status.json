@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-25T12:32:09.214Z",
+  "updatedAt": "2026-11-25T22:11:11.327Z",
   "overall": "partial",
   "services": [
     {
       "id": "website",
       "state": "up",
-      "checkedAt": "2026-11-25T12:32:08.868Z",
+      "checkedAt": "2026-11-25T22:11:10.662Z",
       "status": 200,
-      "latencyMs": 330,
+      "latencyMs": 196,
       "attempts": 1,
       "name": "Website",
       "url": "https://iridium-group.github.io/iridium/",
@@ -17,9 +17,9 @@
     {
       "id": "docs",
       "state": "down",
-      "checkedAt": "2026-11-25T12:32:09.144Z",
+      "checkedAt": "2026-11-25T22:11:10.665Z",
       "status": 404,
-      "latencyMs": 291,
+      "latencyMs": 22,
       "attempts": 2,
       "error": "expected status 200, got 404",
       "name": "Documentation",
@@ -29,9 +29,9 @@
     {
       "id": "github",
       "state": "up",
-      "checkedAt": "2026-11-25T12:32:09.214Z",
+      "checkedAt": "2026-11-25T22:11:11.327Z",
       "status": 200,
-      "latencyMs": 643,
+      "latencyMs": 799,
       "attempts": 1,
       "name": "GitHub organization",
       "url": "https://github.com/Iridium-Group",
